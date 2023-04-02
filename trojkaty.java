@@ -23,7 +23,15 @@ class Trojkaty {
     }
     /** Glowna funkcja */
     public static void main(String... args) {
-        if (args.length != 3) {
+        float c = Float.valueOf(args[2]);
+
+        if (a < 0 || b < 0 || c < 0) {
+		System.out.println("Długości boków trójkąta muszą być nieujemne!");
+                System.exit(2);
+                }
+                
+        jakiTrojkat(a, b, c);
+	if (args.length != 3) {
             pomoc();
             System.exit(1);
         }
