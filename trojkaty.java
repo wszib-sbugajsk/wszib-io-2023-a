@@ -28,6 +28,7 @@ class Trojkaty {
         if (a < 0 || b < 0 || c < 0) {
 		System.out.println("Długości boków trójkąta muszą być nieujemne!");
                 System.exit(2);
+		
                 }
                 
         jakiTrojkat(a, b, c);
